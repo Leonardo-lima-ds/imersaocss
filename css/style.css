@@ -1,16 +1,54 @@
+/* reset do css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: url("../assets/images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial;
+    font-size: 12px;
+}
+
+/*Se a tela tiver ao menos 400px*/
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/*media querys, também chamados de breakpoints*/
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
-    background-color: aliceblue;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
 .menu li {
     list-style: none;
+}
+
+.menu a {
+    
+    display: block;
+    padding: 10px 20px;
 }
 
 .menu ul {
@@ -31,4 +69,34 @@ a:hover {
 .site-title {
     color: whitesmoke;
     text-align: center;
+}
+
+.site-subtitle {
+    font-style: italic;
+}
+
+.site-subtitle {
+    overflow: hidden; /* "Esconde nosso texto até a animação ser iniciada */
+    border-right: 1px solid white; /* Essa bordar exibirá o efeito do cursor */
+    white-space: nowrap;  
+    margin: 0 auto; 
+    animation: 
+        typing 2.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/*@keyframes especifica quando o estilo vai mudar e o percentual*/
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+ 
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.img-portifolio {
+    height: 180px;
+    width: 180px;
 }
