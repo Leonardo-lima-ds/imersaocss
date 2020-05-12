@@ -76,13 +76,13 @@ a:hover {
 }
 
 .site-subtitle {
-    overflow: hidden; /* "Esconde nosso texto até a animação ser iniciada */
+    overflow: hidden; /* Esconde nosso texto até a animação ser iniciada */
     border-right: 1px solid white; /* Essa bordar exibirá o efeito do cursor */
     white-space: nowrap;  
     margin: 0 auto; 
     animation: 
         typing 2.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+        blink-cursor .90s step-end infinite;
 }
 
 /*@keyframes especifica quando o estilo vai mudar e o percentual*/
@@ -91,7 +91,7 @@ a:hover {
   to { width: 100% }
 }
  
-@keyframes blink-caret {
+@keyframes blink-cursor {
   from, to { border-color: transparent }
   50% { border-color: white; }
 }
