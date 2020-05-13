@@ -29,17 +29,20 @@ body {
 /* HEADER */
 
 header {
-    height: 30vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .menu {
-    background-color: white;
+    background: #202020;
+    border-top: 1px solid #353535;
+    box-shadow: 0 4px 0px 0 lightgray;    
     position: fixed;
     width: 100vw;
     top: 0;
+    padding: 10px;;
 }
 
 .menu li {
@@ -49,6 +52,8 @@ header {
 .menu a {
     display: block;
     padding: 10px 20px;
+    color: whitesmoke;
+    font-size: 1.5em;
 }
 
 .menu ul {
@@ -57,7 +62,6 @@ header {
 }
 
 a {
-    color: teal;
     text-decoration: none;
 }
 
@@ -71,7 +75,7 @@ a:hover {
     text-align: center;
     font-family: 'Prompt', sans-serif;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -96,10 +100,10 @@ a:hover {
     display: flex;
     justify-content:space-around;
     position: relative;
-    height: 100vh;
+    height: 95vh;
     color: #feda4a;
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 1500%;
+    font-size: 650%;
     font-weight: 600;
     letter-spacing: 4px;
     line-height: 110%;
@@ -111,7 +115,7 @@ a:hover {
   position: relative;
   top: 9999px;
   transform-origin: 50% 100%;
-  animation: crawl 22s linear infinite;
+  animation: crawl 34s linear infinite;
   animation-iteration-count: 1000;
 }
 
@@ -141,13 +145,7 @@ a:hover {
 
 .portifolio .grid {
     display: grid;
-    gap: 1.5em;
-}
-
-@media (min-width: 640px) {
-    .portifolio .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    gap: 2em;
 }
 
 @media (min-width: 840px) {
@@ -160,15 +158,24 @@ a:hover {
 
 .portifolio figure {
     text-align: center;
+    font-size: 1.2em;
+}
+
+.portifolio figure a {
+    color: whitesmoke;
 }
 
 .img-portifolio {
-    height: 220px;
-    width: 300px;
+    height: 260px;
+    width: 420px;
     object-fit: cover;
 }
 
-
+.img-portifolio:hover {
+    transform: scale(1.5);
+    transition: transform .5s;
+    border: 5px solid #feda4a;
+}
 /*@keyframes especifica quando o estilo vai mudar e o percentual*/
 @keyframes typing {
     from { width: 0 }
