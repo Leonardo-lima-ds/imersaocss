@@ -27,9 +27,8 @@ body {
 }
 
 /* HEADER */
-
 header {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,32 +74,34 @@ a:hover {
     text-align: center;
     font-family: 'Prompt', sans-serif;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.9em;
     text-align: center;
 }
 
 .site-subtitle {
     overflow: hidden; /* Esconde nosso texto até a animação ser iniciada */
-    border-right: 1px solid white; /* Essa bordar exibirá o efeito do cursor */
     white-space: nowrap;  
     margin: 0 auto; 
-    animation: 
-        typing 1.5s steps(40, end),
-        blink-cursor .90s step-end infinite;
+    animation: typing 2s steps(40, end);
 }
 
+/*@keyframes especifica quando o estilo vai mudar e o percentual*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+ 
 /* ABOUT ME */
-
 .star-wars {
     color: transparent;
-    height: 10vh;
+    height: 100vh;
 }
 
 .star-wars:hover {
     display: flex;
     justify-content:space-around;
     position: relative;
-    height: 95vh;
+    height: 100vh;
     color: #feda4a;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 650%;
@@ -131,7 +132,6 @@ a:hover {
 }
 
 /* PROJECTS */
-
 .portifolio {
     padding: 2em;
     height: 100vh;
@@ -175,14 +175,4 @@ a:hover {
     transform: scale(1.5);
     transition: transform .5s;
     border: 5px solid #feda4a;
-}
-/*@keyframes especifica quando o estilo vai mudar e o percentual*/
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
- 
-@keyframes blink-cursor {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
 }
