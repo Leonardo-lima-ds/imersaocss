@@ -7,7 +7,6 @@
 
 body {
     background: url("../assets/images/background.png");
-    background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial;
     font-size: 12px;
@@ -27,8 +26,10 @@ body {
     }
 }
 
+/* HEADER */
+
 header {
-    height: 40vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +47,6 @@ header {
 }
 
 .menu a {
-    
     display: block;
     padding: 10px 20px;
 }
@@ -69,10 +69,10 @@ a:hover {
 .site-title {
     color: whitesmoke;
     text-align: center;
-}
-
-.site-subtitle {
-    font-style: italic;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
 }
 
 .site-subtitle {
@@ -81,22 +81,101 @@ a:hover {
     white-space: nowrap;  
     margin: 0 auto; 
     animation: 
-        typing 2.5s steps(40, end),
+        typing 1.5s steps(40, end),
         blink-cursor .90s step-end infinite;
 }
 
-/*@keyframes especifica quando o estilo vai mudar e o percentual*/
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+/* ABOUT ME */
+
+.star-wars {
+    color: transparent;
+    height: 10vh;
 }
- 
-@keyframes blink-cursor {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
+
+.star-wars:hover {
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    height: 100vh;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1500%;
+    font-weight: 600;
+    letter-spacing: 4px;
+    line-height: 110%;
+    perspective: 400px;
+    text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 22s linear infinite;
+  animation-iteration-count: 1000;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(25deg)  translateZ(0);
+  }
+  100% { 
+    top: -5500px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+/* PROJECTS */
+
+.portifolio {
+    padding: 2em;
+    height: 100vh;
+}
+
+.portifolio h2{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1.5em;
+}
+
+.portifolio .grid {
+    display: grid;
+    gap: 1.5em;
+}
+
+@media (min-width: 640px) {
+    .portifolio .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 840px) {
+    .portifolio .grid {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.portifolio figure {
+    text-align: center;
 }
 
 .img-portifolio {
-    height: 180px;
-    width: 180px;
+    height: 220px;
+    width: 300px;
+    object-fit: cover;
+}
+
+
+/*@keyframes especifica quando o estilo vai mudar e o percentual*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+ 
+@keyframes blink-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
 }
