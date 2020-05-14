@@ -53,6 +53,13 @@ header {
     padding: 10px 20px;
     color: whitesmoke;
     font-size: 1.5em;
+    transition: background-color .5s, color .8s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: whitesmoke;
+    color: black;
 }
 
 .menu ul {
@@ -64,6 +71,7 @@ a {
     text-decoration: none;
 }
 
+a:active,
 a:hover {
     text-decoration: underline;
 }
@@ -97,6 +105,7 @@ a:hover {
     height: 100vh;
 }
 
+.star-wars:active,
 .star-wars:hover {
     display: flex;
     justify-content:space-around;
@@ -110,16 +119,15 @@ a:hover {
     line-height: 110%;
     perspective: 400px;
     text-align: justify;
-    transition-delay: 4s;
+    transition-delay: 3s;
 }
 
 .crawl {
-  position: relative;
-  top: 9999px;
-  transform-origin: 50% 100%;
-  animation: crawl 35s linear infinite;
-  animation-iteration-count: 1000;
-  animation-delay: 4s;
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 35s linear infinite;
+    animation-delay: 3s;
 }
 
 @keyframes crawl {
@@ -135,7 +143,8 @@ a:hover {
 
 /* PROJECTS */
 .portifolio {
-    height: 100vh;
+    height: 90vh;
+    padding-top: 5%;
 }
 
 .portifolio h2 {
@@ -176,10 +185,31 @@ a:hover {
     height: 210px;
     width: 340px;
     object-fit: cover;
+    transition: .8s;
 }
 
 .img-portifolio:hover {
     transform: scale(1.3);
     transition: transform .5s;
     border: 5px solid #feda4a;
+}
+
+.contato {
+    display: grid;
+    text-align: center;
+    height: 60vh;
+    padding-top: 5%;
+}
+
+.contato a {
+    color: whitesmoke;
+    font-size: 5em;
+    text-decoration: none;
+    padding: 0 30px;
+    transition: text-shadow .7s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-shadow: 0 0 14px #feda4a;
 }
