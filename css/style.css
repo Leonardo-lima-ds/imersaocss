@@ -110,14 +110,16 @@ a:hover {
     line-height: 110%;
     perspective: 400px;
     text-align: justify;
+    transition-delay: 4s;
 }
 
 .crawl {
   position: relative;
   top: 9999px;
   transform-origin: 50% 100%;
-  animation: crawl 34s linear infinite;
+  animation: crawl 35s linear infinite;
   animation-iteration-count: 1000;
+  animation-delay: 4s;
 }
 
 @keyframes crawl {
@@ -126,14 +128,13 @@ a:hover {
     transform: rotateX(25deg)  translateZ(0);
   }
   100% { 
-    top: -5500px;
+    top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
   }
 }
 
 /* PROJECTS */
 .portifolio {
-    padding: 2em;
     height: 100vh;
 }
 
@@ -146,6 +147,12 @@ a:hover {
 .portifolio .grid {
     display: grid;
     gap: 2em;
+}
+
+@media (min-width: 620px) {
+    .portifólio .grid{
+        grid-template-columns: repeat(2, 200px);
+    } 
 }
 
 @media (min-width: 840px) {
@@ -172,7 +179,7 @@ a:hover {
 }
 
 .img-portifolio:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition: transform .5s;
     border: 5px solid #feda4a;
 }
