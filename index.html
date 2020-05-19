@@ -1,107 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Prompt:ital,wght@1,200&family=Roboto:ital,wght@1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&family=Nunito+Sans:ital,wght@1,200;1,600&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/924648aafd.js" crossorigin="anonymous"></script>
-    <title>Leonardo Lima</title>
+    <title>Home | Leonardo</title>
 </head>
 
 <body>
-    <header class="fade">
+    <header>
         <nav class="menu">
             <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="menu-link" href="#">Home</a></li>
+                <li><a class="menu-link" href="#sobre">Sobre mim</a></li>
+                <li><a class="menu-link" href="#portifolio">Projetos</a></li>
+                <li><a class="menu-link" href="#contato">Contato</a></li>
+                <li><a href="#">
+                    <img src="./assets/images/ornitorrinco.png.png" alt="logo ornitorrinco">
+                </a></li>
             </ul>
+
         </nav>
 
-        <div>
+        <div class="header-title">
             <h1 class="site-title">Leonardo Lima</h1>
-            <h2 class="site-subtitle">Ornitorrinco Developer</h2>
+            <h2 class="site-subtitle"> Desenvolvedor de software </h2>
+        </div>
+
+        <div class="header-icons">
+            <img src="./assets/images/angular.png" alt="Icone do Angular" class="rotacao">
+            <img src="./assets/images/node-icon.png" alt="Icone do Angular" class="rotacao">
+            <img src="./assets/images/python-icon.png" alt="Icone do Angular" class="rotacao">
+            <img src="./assets/images/golang-icon.png" alt="Icone do Angular" class="rotacao">
         </div>
     </header>
-    
-    <section>        
-        <h2 id="about-title">About me<small> (touch here for a nerd experience)</small></h2>
 
-        <div class="star-wars">
-            <div class="crawl">
-                <h3>ABOUT ME</h3>
-                <p>A long time ago in a university far far away a boy fall in love with technology. He found masters
-                    whom
-                    introduces him in
-                    programming world teaching aboute logic, algorthms, databases and all other weapons necessary, until
-                    the
-                    day that he
-                    finnaly defeated the evilst enemy of the dark side, DATA STRUCTURE, but the journey was just
-                    begenning!
-                    Be my gust to know my conquests.
-                </p>
-                <P>
-                    MAY THE SOURCE BE WITH YOU!
-                </P>
+    <main>
+
+        <section class="sobre" id="sobre">
+            <h1 class="item-title">SOBRE MIM</h1>
+
+            <img class="img-sobre" src="./assets/images/auto.png.jpg" alt="Imagem sobre mim">
+
+            <p class="texto-sobre">
+                Seja bem-vindo! Meu nome é <strong>Leonardo</strong>, sou bacharel em ciência da computação e iniciei
+                como desenvolvedor há pouco mais
+                de 2 anos. Iniciei como Trainee em uma Startup, atuei na criação de novas features em um produto voltado
+                ao setor de recursos humanos, onde tive a oportunidde de trabalhar com tecnologias até então
+                desconhecidas como Golang
+                e Angular.
+
+                Em seguida fui contratado por uma empresa do setor de logistica, no momento eles estavam focados na
+                criação de um novo produto
+                voltado a seguradoras e vistoriadores, entre outros setores, onde tive a experiência de acompanhar o
+                projeto do zero utilizando
+                NodeJS e Angular na versão 6.
+                Estudante de inteligêcia artificial e machine learning pela
+                FIAP, vegetariano, fã
+                de sci-fi
+                e portador de uma admiração inexplicável por ornitorrincos e raposas. Uma das minhas qualidades
+                são dedicação, boa
+                comunicação,
+                trabalho em equipe e resolução de problemas.
+
+                Experiência em projetos em empresas no seguimento bancário, buscando aprender mais sobre
+                estatistica e python
+                voltado para data science :)
+
+                Esse site foi desenvolvido durante a <a href="https://www.alura.com.br/imersao-css">IMERSÃO CSS</a> .
+            </p>
+
+        </section>
+
+        <section class="portifolio" id="portifolio">
+            <h1 class="item-title">PROJETOS</h1>
+
+            <div class="grid">
+
+                <figure>
+                    <a href="https://github.com/Leonardo-lima-ds/keras-classification">
+                        <img class="img-portifolio" src="./assets/images/ts-keras.png" alt="project tensorflow keras">
+                        <figcaption>Keras classifier</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://github.com/Leonardo-lima-ds/api-petshop">
+                        <img class="img-portifolio" src="./assets/images/nodejs.png" alt="NodeJS API">
+                        <figcaption>Node API</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://github.com/Leonardo-lima-ds/rs-background-job">
+                        <img class="img-portifolio" src="./assets/images/node-redis.png" alt="Node and Redis project">
+                        <figcaption>Node with Redis</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://github.com/Leonardo-lima-ds/js-robot">
+                        <img class="img-portifolio" src="./assets/images/robot.png" alt="Robot project">
+                        <figcaption>Robot</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://github.com/Leonardo-lima-ds/data-science-introduction">
+                        <img class="img-portifolio" src="./assets/images/data-science.png"
+                            alt="Project data science image">
+                        <figcaption>Introducion to Data Science</figcaption>
+                    </a>
+                </figure>
             </div>
-        </div>
+        </section>
 
-    </section>
+        <h1 class="item-title container">CONTATO</h1>
 
-    <section id="projects" class="portifolio">
-        <h2 class="site-title">Projects</h2>
-
-        <div class="grid">
-            <figure>
-                <a href="https://github.com/Leonardo-lima-ds/keras-classification">
-                    <img class="img-portifolio" src="./assets/images/ts-keras.png" alt="project tensorflow keras">
-                    <figcaption>Keras classifier</figcaption>
-                </a>
-            </figure>
-            <figure>
-                <a href="https://github.com/Leonardo-lima-ds/api-petshop">
-                    <img class="img-portifolio" src="./assets/images/nodejs.png" alt="NodeJS API">
-                    <figcaption>Node API</figcaption>
-                </a>
-            </figure>
-            <figure>
-                <a href="https://github.com/Leonardo-lima-ds/rs-background-job">
-                    <img class="img-portifolio" src="./assets/images/node-redis.png" alt="Node and Redis project">
-                    <figcaption>Node with Redis</figcaption>
-                </a>
-            </figure>
-            <figure>
-                <a href="https://github.com/Leonardo-lima-ds/js-robot">
-                    <img class="img-portifolio" src="./assets/images/robot.png" alt="Robot project">
-                    <figcaption>Robot</figcaption>
-                </a>
-            </figure>
-            <figure>
-                <a href="https://github.com/Leonardo-lima-ds/data-science-introduction">
-                    <img class="img-portifolio" src="./assets/images/data-science.png" alt="Project data science image">
-                    <figcaption>Introducion to Data Science</figcaption>
-                </a>
-            </figure>
-        </div>
-    </section>
-
-    <section class="contato" id="contato">
-        <h2 class="site-title">Contact</h2>
-
-        <div class="grid icons">
+        <section class="contato" id="contato">
             <a target="_blank" href="https://github.com/Leonardo-lima-ds">
                 <i class="fab fa-github"></i>
             </a>
             <a target="_blank" href="https://www.linkedin.com/in/leonardo-lima-79766295">
                 <i class="fab fa-linkedin"></i>
             </a>
-        </div>
-    </section>
+        </section>
 
+    </main>
 </body>
 
 </html>
